@@ -2,7 +2,7 @@ import os,sys
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from all_apis import create_app
+from osm import create_app
 
 app = create_app()
 
