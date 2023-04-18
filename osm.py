@@ -14,7 +14,7 @@ def create_app():
         headers = {"Authorization": "Bearer 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"}
 
         def query(payload):
-            response = requests.post(API_URL, headers=headers, json=payload, timeout=60)
+            response = requests.post(API_URL, headers=headers, json=payload)
             return response.json()
             
         output = query({
